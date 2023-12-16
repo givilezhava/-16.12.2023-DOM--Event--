@@ -1,26 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- Title -->
-  <title>Quick Quiz</title>
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="assets/css/app.css" />
-  <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px;
+    }
+  </style>
+  <script>
+    function hideDiv() {
+      document.getElementById("myDiv").style.display = "none";
+    }
+  </script>
 </head>
-
 <body>
-  <main class="container">
-    <div id="home" class="flex-center flex-column">
-      <h1 style="text-align: center;">Javascript Quiz</h1>
-      <a class="btn" href="assets/html/game.html">Play</a>
-      <a class="btn" href="assets/html/highscores.html">High Scores</a>
-    </div>
-  </main>
-</body>
 
+<div id="myDiv"></div>
+<button onclick="hideDiv()">Hide Div</button>
+
+</body>
+</html>
+    </script>
+</body>
 </html>
